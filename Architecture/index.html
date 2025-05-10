@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Paris Architectural</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Cormorant+Garamond:wght@400;600&family=EB+Garamond:wght@400;700&family=Cinzel:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="map"></div>
+
+  <div id="filter-panel">
+    <strong>Filter by Style:</strong><br>
+    <label class="icon-label">
+      <input type="checkbox" value="Gothic" checked>
+      <img src="icons/icon_Gothic.png" class="style-icon"> Gothic
+    </label>
+    <label class="icon-label">
+      <input type="checkbox" value="Renaissance" checked>
+      <img src="icons/icon_Renaissance.png" class="style-icon"> Renaissance
+    </label>
+    <label class="icon-label">
+      <input type="checkbox" value="Baroque" checked>
+      <img src="icons/icon_Baroque.png" class="style-icon"> Baroque
+    </label>
+    <label class="icon-label">
+      <input type="checkbox" value="Art_Nouveau" checked>
+      <img src="icons/icon_Art_Nouveau.png" class="style-icon"> Art Nouveau
+    </label>
+    <label class="icon-label">
+      <input type="checkbox" value="Haussmannian" checked>
+      <img src="icons/icon_Haussmannian.png" class="style-icon"> Haussmannian
+    </label>
+    <label class="icon-label">
+      <input type="checkbox" value="Modernist" checked>
+      <img src="icons/icon_Modernist.png" class="style-icon"> Modernist
+    </label>
+    <label class="icon-label">
+      <input type="checkbox" value="Contemporary" checked>
+      <img src="icons/icon_Contemporary.png" class="style-icon"> Contemporary
+    </label>
+    <label class="icon-label">
+      <input type="checkbox" value="Neoclassical" checked>
+      <img src="icons/icon_Neoclassical.png" class="style-icon"> Neoclassical
+    </label>
+    <label class="icon-label">
+      <input type="checkbox" value="Postmodernist" checked>
+      <img src="icons/icon_Postmodernist.png" class="style-icon"> Postmodernist
+    </label>
+
+    <hr>
+    <strong>Filter by Year (≤):</strong><br>
+    <input type="range" id="year-slider" min="1400" max="2000" value="1400" step="1">
+    Year ≤ <span id="year-value">1400</span><br>
+
+    <div style="margin-top:5px;">
+      <button id="reset-button">Reset All</button>
+      <button id="play-toggle-button">⏸ Pause</button>
+    </div>
+  </div>
+
+  <button id="toggle-info">📖</button>
+  <div id="info-panel">
+    <div id="style-content">
+      <div class="style-block" id="style-Gothic">
+        <h3><img class="title-icon" src="icons/icon_Gothic.png"> Gothic</h3>
+        <div class="style-images">
+          <img src="images/gothic_1.jpg" alt="Gothic Architecture in Paris">
+          <img src="images/gothic_2.jpg" alt="Notre-Dame Cathedral">
+        </div>
+        <p>Gothic architecture developed in 12th-century France and is best known for its soaring verticality and dramatic visual impact. Key features include pointed arches, ribbed vaults, flying buttresses, and expansive stained-glass windows. These innovations allowed cathedrals to rise to unprecedented heights and become filled with light, symbolizing divine presence. In Paris, Gothic architecture is embodied in monumental works such as Notre-Dame Cathedral. This style emphasized spiritual transcendence and civic pride, with façades often adorned with religious sculpture and detailed ornamentation. Gothic buildings served religious, academic, and even civic functions, reflecting the theological and cultural values of medieval Europe.</p>
+      </div>
+
+      <div class="style-block" id="style-Renaissance">
+        <h3><img class="title-icon" src="icons/icon_Renaissance.png"> Renaissance</h3>
+        <div class="style-images">
+          <img src="images/renaissance_1.jpg" alt="Renaissance Architecture in Paris">
+          <img src="images/renaissance_2.jpg" alt="Louvre Lescot Wing">
+        </div>
+        <p>Renaissance architecture, originating in 15th-century Florence, marked a revival of classical antiquity through symmetry, proportion, and geometry. It rejected the complexity of Gothic design, favoring clean lines and harmonious forms. Influenced by ancient Roman architecture, key elements include domes, columns, rounded arches, and pilasters. In Paris, the Renaissance influence is seen in the Louvre’s Lescot Wing, which blends local Gothic traditions with classical motifs. The Renaissance period in architecture represented the intellectual and artistic awakening of Europe, often associated with humanism, mathematical precision, and civic order. Buildings often conveyed learning, wealth, and the ideal of man as the measure of all things.</p>
+      </div>
+
+      <div class="style-block" id="style-Baroque">
+        <h3><img class="title-icon" src="icons/icon_Baroque.png"> Baroque</h3>
+        <div class="style-images">
+          <img src="images/baroque_1.jpg" alt="Baroque Architecture in Paris">
+          <img src="images/baroque_2.jpg" alt="Les Invalides Dome">
+        </div>
+        <p>Baroque architecture emerged in late 16th-century Italy and spread across Europe as a response to the Renaissance. It is characterized by grandeur, theatricality, and dynamic ornamentation. Curved forms, elaborate domes, dramatic use of light and shadow, and intricate details define the style. In Paris, Baroque buildings often signified royal power and Catholic strength, with examples such as Les Invalides. The style is associated with the absolutist state and the Counter-Reformation, using architecture to impress, overwhelm, and emotionally engage the viewer. In urban settings, Baroque principles also shaped symmetrical avenues and dramatic public spaces that guided the viewer's eye and movement.</p>
+      </div>
+
+      <div class="style-block" id="style-Art_Nouveau">
+        <h3><img class="title-icon" src="icons/icon_Art_Nouveau.png"> Art Nouveau</h3>
+        <div class="style-images">
+          <img src="images/artnouveau_1.jpg" alt="Guimard Metro Entrance">
+          <img src="images/artnouveau_2.jpg" alt="Paris Art Nouveau Facade">
+        </div>
+        <p>Art Nouveau flourished between 1890 and 1910 as an international reaction to academic and historicist styles. It sought to create a new artistic language rooted in nature, craftsmanship, and the rejection of industrial monotony. The architecture features organic forms, floral motifs, curving lines, and elaborate ironwork. In Paris, Hector Guimard’s metro entrances are iconic examples. Art Nouveau structures often used modern materials like glass and wrought iron, blending art with utility. Though relatively short-lived, Art Nouveau left a profound legacy on graphic design, interiors, and decorative arts, and is considered a precursor to modernist ideas in its embrace of total design unity.</p>
+      </div>
+
+      <div class="style-block" id="style-Haussmannian">
+        <h3><img class="title-icon" src="icons/icon_Haussmannian.png"> Haussmannian</h3>
+        <div class="style-images">
+          <img src="images/haussmannian_1.jpg" alt="Paris Haussmannian Street">
+          <img src="images/haussmannian_2.jpg" alt="Uniform Haussmannian Facade">
+        </div>
+        <p>Haussmannian architecture refers to the uniform urban design implemented under Baron Georges-Eugène Haussmann during Napoleon III’s renovation of Paris (1853–1870). It emphasized wide boulevards, consistent building heights, symmetrical façades, and aligned cornices. Typically five to seven stories tall, Haussmannian buildings feature wrought-iron balconies, mansard roofs, and stone façades. The style unified Paris aesthetically and functionally, improving sanitation, traffic flow, and social order. Though criticized for displacing the working class, Haussmann's vision is now synonymous with Parisian identity. The rational geometry and elegance of Haussmannian buildings laid the foundation for modern urban planning and continue to influence architectural codes worldwide.</p>
+      </div>
+
+      <div class="style-block" id="style-Modernist">
+        <h3><img class="title-icon" src="icons/icon_Modernist.png"> Modernist</h3>
+        <div class="style-images">
+          <img src="images/modernist_1.jpg" alt="Modernist Architecture in Paris">
+          <img src="images/modernist_2.jpg" alt="Le Corbusier Building">
+        </div>
+        <p>Modernist architecture, emerging in the early 20th century, championed rationalism, functionalism, and the rejection of ornamentation. Influenced by movements like Bauhaus and De Stijl, it emphasized new materials such as reinforced concrete, steel, and glass. Clean lines, flat roofs, and asymmetry are hallmarks of the style. In Paris, Le Corbusier’s work exemplifies Modernism’s ideals, including modular living, machine-like efficiency, and minimal aesthetic. Modernist architecture aimed to democratize space and embrace the industrial age. While widely adopted in housing and institutional buildings, it has been both celebrated for innovation and critiqued for creating alienating urban environments. It paved the way for postmodern critiques and reinventions.</p>
+      </div>
+
+      <div class="style-block" id="style-Contemporary">
+        <h3><img class="title-icon" src="icons/icon_Contemporary.png"> Contemporary</h3>
+        <div class="style-images">
+          <img src="images/contemporary_1.jpg" alt="Louis Vuitton Foundation">
+          <img src="images/contemporary_2.jpg" alt="Parc de la Villette">
+        </div>
+        <p>Contemporary architecture refers to the evolving design trends of the late 20th and early 21st centuries. It encompasses a range of styles but is often marked by innovation, sustainability, and the blending of technology with form. Key characteristics include irregular shapes, open interiors, green roofs, and smart materials. In Paris, contemporary architecture can be seen in structures like the Fondation Louis Vuitton or Parc de la Villette. These designs emphasize environmental responsiveness, cultural symbolism, and human-centered design. As a pluralistic style, Contemporary architecture challenges tradition, embraces diversity, and adapts to social and ecological imperatives, making it highly relevant in today’s urban landscape.</p>
+      </div>
+
+      <div class="style-block" id="style-Neoclassical">
+        <h3><img class="title-icon" src="icons/icon_Neoclassical.png"> Neoclassical</h3>
+        <div class="style-images">
+          <img src="images/neoclassical_1.jpg" alt="Pantheon Paris">
+          <img src="images/neoclassical_2.jpg" alt="Neoclassical Facade">
+        </div>
+        <p>Neoclassical architecture emerged in the 18th century as a reaction to the excesses of Baroque and Rococo. Inspired by ancient Greek and Roman forms, it emphasized simplicity, symmetry, and monumental scale. Common features include columns, pediments, domes, and clean lines. In Paris, the Panthéon exemplifies Neoclassical ideals. The style conveyed authority, civic virtue, and rationalism, often adopted for public buildings and institutions. Neoclassicism was tied to Enlightenment thought and republican ideals, serving as the architectural language of revolution and reform. Its restrained grandeur continues to influence governmental, educational, and cultural architecture across the world.</p>
+      </div>
+
+      <div class="style-block" id="style-Postmodernist">
+        <h3><img class="title-icon" src="icons/icon_Postmodernist.png"> Postmodernist</h3>
+        <div class="style-images">
+          <img src="images/postmodernist_1.jpg" alt="Institut du Monde Arabe">
+          <img src="images/postmodernist_2.jpg" alt="Postmodern Bercy">
+        </div>
+        <p>Postmodernist architecture arose in the 1970s as a critique of Modernism’s austerity and utopianism. It reintroduced ornament, symbolism, and historical references in playful, ironic, or provocative ways. Facades often juxtapose classical elements with bright colors, unusual forms, and visual metaphors. In Paris, buildings such as the Institut du Monde Arabe or the Bercy district reflect this eclectic approach. Postmodernism embraces complexity and contradiction, challenging the rigidity of “form follows function.” It fostered architectural pluralism and opened debates about identity, context, and narrative in design. Though divisive, its legacy expanded the expressive range of architecture and paved the way for contemporary experimentation.</p>
+      </div>
+  </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

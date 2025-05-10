@@ -1,0 +1,1607 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Notre-Dame de Paris",
+        "style": "Gothic",
+        "year_built": "1163–1345",
+        "description": "Gothic building constructed in 1163–1345.",
+        "year_start": 1163,
+        "year_end": 1345
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.349902,
+          48.852968
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sainte-Chapelle",
+        "style": "Gothic",
+        "year_built": "1242–1248",
+        "description": "Gothic building constructed in 1242–1248.",
+        "year_start": 1242,
+        "year_end": 1248
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.34483,
+          48.855358
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Saint-Eustache Church",
+        "style": "Gothic",
+        "year_built": "1532–1632",
+        "description": "Gothic building constructed in 1532–1632.",
+        "year_start": 1532,
+        "year_end": 1632
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3475,
+          48.8625
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Saint-Julien-le-Pauvre",
+        "style": "Gothic",
+        "year_built": "13th century",
+        "description": "Gothic building constructed in 13th century.",
+        "year_start": 1201,
+        "year_end": 1300
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3497,
+          48.8514
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Saint-Nicolas-des-Champs",
+        "style": "Gothic",
+        "year_built": "15th–17th centuries",
+        "description": "Gothic building constructed in 15th–17th centuries.",
+        "year_start": null,
+        "year_end": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3578,
+          48.8706
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Basilica of Saint-Denis",
+        "style": "Gothic",
+        "year_built": "1135–1144",
+        "description": "Gothic building constructed in 1135–1144.",
+        "year_start": 1135,
+        "year_end": 1144
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3599,
+          48.9359
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Saint-Médard Church",
+        "style": "Gothic",
+        "year_built": "15th century",
+        "description": "Gothic building constructed in 15th century.",
+        "year_start": 1401,
+        "year_end": 1500
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3514,
+          48.8389
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tour Saint-Jacques",
+        "style": "Gothic",
+        "year_built": "1509–1523",
+        "description": "Gothic building constructed in 1509–1523.",
+        "year_start": 1509,
+        "year_end": 1523
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3499,
+          48.8575
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Saint-Germain l'Auxerrois",
+        "style": "Gothic",
+        "year_built": "12th–15th centuries",
+        "description": "Gothic building constructed in 12th–15th centuries.",
+        "year_start": null,
+        "year_end": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3411,
+          48.8593
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Saint-Laurent Church",
+        "style": "Gothic",
+        "year_built": "15th century",
+        "description": "Gothic building constructed in 15th century.",
+        "year_start": 1401,
+        "year_end": 1500
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3583,
+          48.875
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lescot Wing of the Louvre",
+        "style": "Renaissance",
+        "year_built": "1546–1553",
+        "description": "Renaissance building constructed in 1546–1553.",
+        "year_start": 1546,
+        "year_end": 1553
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3376,
+          48.8606
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hôtel Carnavalet",
+        "style": "Renaissance",
+        "year_built": "1548–1560",
+        "description": "Renaissance building constructed in 1548–1560.",
+        "year_start": 1548,
+        "year_end": 1560
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3621,
+          48.8575
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hôtel de Ville (City Hall)",
+        "style": "Renaissance",
+        "year_built": "1533–1628",
+        "description": "Renaissance building constructed in 1533–1628.",
+        "year_start": 1533,
+        "year_end": 1628
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3522,
+          48.8566
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pont Neuf",
+        "style": "Renaissance",
+        "year_built": "1578–1607",
+        "description": "Renaissance building constructed in 1578–1607.",
+        "year_start": 1578,
+        "year_end": 1607
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3419,
+          48.857
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hôtel de Sens",
+        "style": "Renaissance",
+        "year_built": "1475–1519",
+        "description": "Renaissance building constructed in 1475–1519.",
+        "year_start": 1475,
+        "year_end": 1519
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3585,
+          48.8546
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hôtel de Lamoignon",
+        "style": "Renaissance",
+        "year_built": 1584,
+        "description": "Renaissance building constructed in 1584.",
+        "year_start": 1584,
+        "year_end": 1584
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3629,
+          48.8571
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hôtel de Sully",
+        "style": "Renaissance",
+        "year_built": "1624–1630",
+        "description": "Renaissance building constructed in 1624–1630.",
+        "year_start": 1624,
+        "year_end": 1630
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3622,
+          48.8555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hôtel d'Angoulême Lamoignon",
+        "style": "Renaissance",
+        "year_built": 1584,
+        "description": "Renaissance building constructed in 1584.",
+        "year_start": 1584,
+        "year_end": 1584
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3629,
+          48.8571
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hôtel de Beauvais",
+        "style": "Renaissance",
+        "year_built": "1654–1655",
+        "description": "Renaissance building constructed in 1654–1655.",
+        "year_start": 1654,
+        "year_end": 1655
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3572,
+          48.8553
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hôtel de Cluny",
+        "style": "Renaissance",
+        "year_built": "1485–1510",
+        "description": "Renaissance building constructed in 1485–1510.",
+        "year_start": 1485,
+        "year_end": 1510
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343,
+          48.8506
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Les Invalides",
+        "style": "Baroque",
+        "year_built": "1671–1708",
+        "description": "Baroque building constructed in 1671–1708.",
+        "year_start": 1671,
+        "year_end": 1708
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3125,
+          48.855
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Church of Saint-Sulpice",
+        "style": "Baroque",
+        "year_built": "1646–1870",
+        "description": "Baroque building constructed in 1646–1870.",
+        "year_start": 1646,
+        "year_end": 1870
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3331,
+          48.8519
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Church of Saint-Paul-Saint-Louis",
+        "style": "Baroque",
+        "year_built": "1627–1641",
+        "description": "Baroque building constructed in 1627–1641.",
+        "year_start": 1627,
+        "year_end": 1641
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3626,
+          48.8553
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hôtel Lambert",
+        "style": "Baroque",
+        "year_built": "1640–1644",
+        "description": "Baroque building constructed in 1640–1644.",
+        "year_start": 1640,
+        "year_end": 1644
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3593,
+          48.8515
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hôtel de Beauvais",
+        "style": "Baroque",
+        "year_built": "1654–1655",
+        "description": "Baroque building constructed in 1654–1655.",
+        "year_start": 1654,
+        "year_end": 1655
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3572,
+          48.8553
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Church of Saint-Louis-en-l'Île",
+        "style": "Baroque",
+        "year_built": "1664–1726",
+        "description": "Baroque building constructed in 1664–1726.",
+        "year_start": 1664,
+        "year_end": 1726
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3576,
+          48.8513
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Church of Saint-Roch",
+        "style": "Baroque",
+        "year_built": "1653–1722",
+        "description": "Baroque building constructed in 1653–1722.",
+        "year_start": 1653,
+        "year_end": 1722
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3317,
+          48.8664
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Church of Saint-Thomas-d'Aquin",
+        "style": "Baroque",
+        "year_built": "1682–1683",
+        "description": "Baroque building constructed in 1682–1683.",
+        "year_start": 1682,
+        "year_end": 1683
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3242,
+          48.855
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Church of Saint-Joseph-des-Carmes",
+        "style": "Baroque",
+        "year_built": "1613–1620",
+        "description": "Baroque building constructed in 1613–1620.",
+        "year_start": 1613,
+        "year_end": 1620
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3378,
+          48.8475
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Church of Saint-François-Xavier",
+        "style": "Baroque",
+        "year_built": "1861–1874",
+        "description": "Baroque building constructed in 1861–1874.",
+        "year_start": 1861,
+        "year_end": 1874
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3125,
+          48.85
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Panthéon",
+        "style": "Neoclassical",
+        "year_built": "1758–1790",
+        "description": "Neoclassical building constructed in 1758–1790.",
+        "year_start": 1758,
+        "year_end": 1790
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3458,
+          48.8462
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "La Madeleine Church",
+        "style": "Neoclassical",
+        "year_built": "1764–1842",
+        "description": "Neoclassical building constructed in 1764–1842.",
+        "year_start": 1764,
+        "year_end": 1842
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32,
+          48.87
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Arc de Triomphe",
+        "style": "Neoclassical",
+        "year_built": "1806–1836",
+        "description": "Neoclassical building constructed in 1806–1836.",
+        "year_start": 1806,
+        "year_end": 1836
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.295,
+          48.8738
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Palais Bourbon",
+        "style": "Neoclassical",
+        "year_built": "1722–1728",
+        "description": "Neoclassical building constructed in 1722–1728.",
+        "year_start": 1722,
+        "year_end": 1728
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3167,
+          48.8611
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Palais Brongniart",
+        "style": "Neoclassical",
+        "year_built": "1807–1826",
+        "description": "Neoclassical building constructed in 1807–1826.",
+        "year_start": 1807,
+        "year_end": 1826
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3411,
+          48.8688
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Church of Saint-Vincent-de-Paul",
+        "style": "Neoclassical",
+        "year_built": "1824–1844",
+        "description": "Neoclassical building constructed in 1824–1844.",
+        "year_start": 1824,
+        "year_end": 1844
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3528,
+          48.8792
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chapelle Expiatoire",
+        "style": "Neoclassical",
+        "year_built": "1815–1826",
+        "description": "Neoclassical building constructed in 1815–1826.",
+        "year_start": 1815,
+        "year_end": 1826
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3235,
+          48.8747
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hôtel de Salm",
+        "style": "Neoclassical",
+        "year_built": "1782–1787",
+        "description": "Neoclassical building constructed in 1782–1787.",
+        "year_start": 1782,
+        "year_end": 1787
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3243,
+          48.8635
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Palais de la Légion d'Honneur",
+        "style": "Neoclassical",
+        "year_built": "1782–1787",
+        "description": "Neoclassical building constructed in 1782–1787.",
+        "year_start": 1782,
+        "year_end": 1787
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3243,
+          48.8635
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Palais du Luxembourg",
+        "style": "Neoclassical",
+        "year_built": "1615–1645",
+        "description": "Neoclassical building constructed in 1615–1645.",
+        "year_start": 1615,
+        "year_end": 1645
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3372,
+          48.8462
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boulevard Haussmann",
+        "style": "Haussmannian",
+        "year_built": "1857–1927",
+        "description": "Haussmannian building constructed in 1857–1927.",
+        "year_start": 1857,
+        "year_end": 1927
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33,
+          48.874
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Avenue de l'Opéra",
+        "style": "Haussmannian",
+        "year_built": "1864–1879",
+        "description": "Haussmannian building constructed in 1864–1879.",
+        "year_start": 1864,
+        "year_end": 1879
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3325,
+          48.8667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boulevard Saint-Germain",
+        "style": "Haussmannian",
+        "year_built": "1855–1877",
+        "description": "Haussmannian building constructed in 1855–1877.",
+        "year_start": 1855,
+        "year_end": 1877
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3444,
+          48.8525
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boulevard Henri IV",
+        "style": "Haussmannian",
+        "year_built": "1855–1877",
+        "description": "Haussmannian building constructed in 1855–1877.",
+        "year_start": 1855,
+        "year_end": 1877
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.36,
+          48.85
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boulevard Raspail",
+        "style": "Haussmannian",
+        "year_built": "1855–1907",
+        "description": "Haussmannian building constructed in 1855–1907.",
+        "year_start": 1855,
+        "year_end": 1907
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3269,
+          48.8417
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Place de l'Étoile",
+        "style": "Haussmannian",
+        "year_built": "1854–1869",
+        "description": "Haussmannian building constructed in 1854–1869.",
+        "year_start": 1854,
+        "year_end": 1869
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.295,
+          48.8738
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Place de la République",
+        "style": "Haussmannian",
+        "year_built": "1854–1879",
+        "description": "Haussmannian building constructed in 1854–1879.",
+        "year_start": 1854,
+        "year_end": 1879
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.363,
+          48.8675
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Place du Châtelet",
+        "style": "Haussmannian",
+        "year_built": "1854–1860",
+        "description": "Haussmannian building constructed in 1854–1860.",
+        "year_start": 1854,
+        "year_end": 1860
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.347,
+          48.8583
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Place de la Bastille",
+        "style": "Haussmannian",
+        "year_built": "1854–1860",
+        "description": "Haussmannian building constructed in 1854–1860.",
+        "year_start": 1854,
+        "year_end": 1860
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.369,
+          48.853
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Place de la Nation",
+        "style": "Haussmannian",
+        "year_built": "1854–1860",
+        "description": "Haussmannian building constructed in 1854–1860.",
+        "year_start": 1854,
+        "year_end": 1860
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.395,
+          48.848
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Castel Béranger",
+        "style": "Art Nouveau",
+        "year_built": "1895–1898",
+        "description": "Art Nouveau building constructed in 1895–1898.",
+        "year_start": 1895,
+        "year_end": 1898
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.27,
+          48.847
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hôtel Guimard",
+        "style": "Art Nouveau",
+        "year_built": 1909,
+        "description": "Art Nouveau building constructed in 1909.",
+        "year_start": 1909,
+        "year_end": 1909
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.27,
+          48.848
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "29 Avenue Rapp",
+        "style": "Art Nouveau",
+        "year_built": 1901,
+        "description": "Art Nouveau building constructed in 1901.",
+        "year_start": 1901,
+        "year_end": 1901
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.301,
+          48.861
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "6 Avenue Kléber",
+        "style": "Art Nouveau",
+        "year_built": "Early 20th century",
+        "description": "Art Nouveau building constructed in Early 20th century.",
+        "year_start": null,
+        "year_end": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.293,
+          48.866
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Galeries Lafayette",
+        "style": "Art Nouveau",
+        "year_built": 1912,
+        "description": "Art Nouveau building constructed in 1912.",
+        "year_start": 1912,
+        "year_end": 1912
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332,
+          48.872
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "La Samaritaine",
+        "style": "Art Nouveau",
+        "year_built": 1870,
+        "description": "Art Nouveau building constructed in 1870.",
+        "year_start": 1870,
+        "year_end": 1870
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3421,
+          48.8589
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hôtel Mezzara",
+        "style": "Art Nouveau",
+        "year_built": 1910,
+        "description": "Art Nouveau building constructed in 1910.",
+        "year_start": 1910,
+        "year_end": 1910
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.27,
+          48.847
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "14 Rue Jean de la Fontaine",
+        "style": "Art Nouveau",
+        "year_built": "1895–1898",
+        "description": "Art Nouveau building constructed in 1895–1898.",
+        "year_start": 1895,
+        "year_end": 1898
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.27,
+          48.847
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "33 Rue du Champ de Mars",
+        "style": "Art Nouveau",
+        "year_built": "Early 20th century",
+        "description": "Art Nouveau building constructed in Early 20th century.",
+        "year_start": null,
+        "year_end": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3,
+          48.857
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "34 Avenue des Champs-Élysées",
+        "style": "Art Nouveau",
+        "year_built": "Early 20th century",
+        "description": "Art Nouveau building constructed in Early 20th century.",
+        "year_start": null,
+        "year_end": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.307,
+          48.869
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Villa Savoye",
+        "style": "Modernist",
+        "year_built": "1928–1931",
+        "description": "Modernist building constructed in 1928–1931.",
+        "year_start": 1928,
+        "year_end": 1931
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.036,
+          48.932
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Maison La Roche",
+        "style": "Modernist",
+        "year_built": "1923–1925",
+        "description": "Modernist building constructed in 1923–1925.",
+        "year_start": 1923,
+        "year_end": 1925
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.27,
+          48.851
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cité de Refuge",
+        "style": "Modernist",
+        "year_built": 1933,
+        "description": "Modernist building constructed in 1933.",
+        "year_start": 1933,
+        "year_end": 1933
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.37,
+          48.832
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Maison Planeix",
+        "style": "Modernist",
+        "year_built": "1924–1928",
+        "description": "Modernist building constructed in 1924–1928.",
+        "year_start": 1924,
+        "year_end": 1928
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.37,
+          48.835
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Maison Cook",
+        "style": "Modernist",
+        "year_built": 1926,
+        "description": "Modernist building constructed in 1926.",
+        "year_start": 1926,
+        "year_end": 1926
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.27,
+          48.841
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Immeuble Molitor",
+        "style": "Modernist",
+        "year_built": 1934,
+        "description": "Modernist building constructed in 1934.",
+        "year_start": 1934,
+        "year_end": 1934
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.27,
+          48.846
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Maison du Brésil",
+        "style": "Modernist",
+        "year_built": 1959,
+        "description": "Modernist building constructed in 1959.",
+        "year_start": 1959,
+        "year_end": 1959
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.337,
+          48.823
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Maison de Verre",
+        "style": "Modernist",
+        "year_built": "1928–1932",
+        "description": "Modernist building constructed in 1928–1932.",
+        "year_start": 1928,
+        "year_end": 1932
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.34,
+          48.847
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Immeuble Clarté",
+        "style": "Modernist",
+        "year_built": 1932,
+        "description": "Modernist building constructed in 1932.",
+        "year_start": 1932,
+        "year_end": 1932
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.27,
+          48.849
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Les Espaces d'Abraxas",
+        "style": "Postmodernist",
+        "year_built": "1978–1982",
+        "description": "Postmodernist building constructed in 1978–1982.",
+        "year_start": 1978,
+        "year_end": 1982
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.548,
+          48.8411
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tour Montparnasse",
+        "style": "Postmodernist",
+        "year_built": "1969–1973",
+        "description": "Postmodernist building constructed in 1969–1973.",
+        "year_start": 1969,
+        "year_end": 1973
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3215,
+          48.8422
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Arab World Institute",
+        "style": "Postmodernist",
+        "year_built": "1981–1987",
+        "description": "Postmodernist building constructed in 1981–1987.",
+        "year_start": 1981,
+        "year_end": 1987
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.358,
+          48.848
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bibliothèque Nationale de France",
+        "style": "Postmodernist",
+        "year_built": "1989–1995",
+        "description": "Postmodernist building constructed in 1989–1995.",
+        "year_start": 1989,
+        "year_end": 1995
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.376,
+          48.833
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Palais de Tokyo Expansion",
+        "style": "Postmodernist",
+        "year_built": "2001–2002",
+        "description": "Postmodernist building constructed in 2001–2002.",
+        "year_start": 2001,
+        "year_end": 2002
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2966,
+          48.8645
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Parc de la Villette",
+        "style": "Postmodernist",
+        "year_built": "1984–1987",
+        "description": "Postmodernist building constructed in 1984–1987.",
+        "year_start": 1984,
+        "year_end": 1987
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.393,
+          48.89
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hôtel Fouquet's Barrière",
+        "style": "Postmodernist",
+        "year_built": 2006,
+        "description": "Postmodernist building constructed in 2006.",
+        "year_start": 2006,
+        "year_end": 2006
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3,
+          48.8722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Les Colonnes de Buren (Palais Royal)",
+        "style": "Postmodernist",
+        "year_built": "1985–1986",
+        "description": "Postmodernist building constructed in 1985–1986.",
+        "year_start": 1985,
+        "year_end": 1986
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336,
+          48.8638
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "La Défense Grande Arche",
+        "style": "Postmodernist",
+        "year_built": "1985–1989",
+        "description": "Postmodernist building constructed in 1985–1989.",
+        "year_start": 1985,
+        "year_end": 1989
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2369,
+          48.8925
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Les Orgues de Flandre",
+        "style": "Postmodernist",
+        "year_built": "1974–1980",
+        "description": "Postmodernist building constructed in 1974–1980.",
+        "year_start": 1974,
+        "year_end": 1980
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.383,
+          48.889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fondation Louis Vuitton",
+        "style": "Contemporary",
+        "year_built": "2006–2014",
+        "description": "Contemporary building constructed in 2006–2014.",
+        "year_start": 2006,
+        "year_end": 2014
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2634,
+          48.8766
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Philharmonie de Paris",
+        "style": "Contemporary",
+        "year_built": "2006–2015",
+        "description": "Contemporary building constructed in 2006–2015.",
+        "year_start": 2006,
+        "year_end": 2015
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3941,
+          48.8916
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Musée du quai Branly – Jacques Chirac",
+        "style": "Contemporary",
+        "year_built": "2001–2006",
+        "description": "Contemporary building constructed in 2001–2006.",
+        "year_start": 2001,
+        "year_end": 2006
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2976,
+          48.8606
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Louvre Pyramid",
+        "style": "Contemporary",
+        "year_built": "1984–1989",
+        "description": "Contemporary building constructed in 1984–1989.",
+        "year_start": 1984,
+        "year_end": 1989
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3376,
+          48.8606
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "La Seine Musicale",
+        "style": "Contemporary",
+        "year_built": "2013–2017",
+        "description": "Contemporary building constructed in 2013–2017.",
+        "year_start": 2013,
+        "year_end": 2017
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2296,
+          48.8306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Les Docks – Cité de la Mode et du Design",
+        "style": "Contemporary",
+        "year_built": "2008–2012",
+        "description": "Contemporary building constructed in 2008–2012.",
+        "year_start": 2008,
+        "year_end": 2012
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.37,
+          48.8445
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Canopy of Les Halles",
+        "style": "Contemporary",
+        "year_built": "2010–2016",
+        "description": "Contemporary building constructed in 2010–2016.",
+        "year_start": 2010,
+        "year_end": 2016
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3469,
+          48.8626
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tour Triangle (planned)",
+        "style": "Contemporary",
+        "year_built": "2020–2026 (est.)",
+        "description": "Contemporary building constructed in 2020–2026 (est.).",
+        "year_start": 2020,
+        "year_end": 2026
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.29,
+          48.83
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Maréchal Fayolle Housing Complex",
+        "style": "Contemporary",
+        "year_built": "2014–2018",
+        "description": "Contemporary building constructed in 2014–2018.",
+        "year_start": 2014,
+        "year_end": 2018
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.264,
+          48.863
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "100 logements sociaux, Rue Rebière",
+        "style": "Contemporary",
+        "year_built": "2011–2014",
+        "description": "Contemporary building constructed in 2011–2014.",
+        "year_start": 2011,
+        "year_end": 2014
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338,
+          48.899
+        ]
+      }
+    }
+  ]
+}
