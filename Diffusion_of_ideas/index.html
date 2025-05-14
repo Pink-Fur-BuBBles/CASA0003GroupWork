@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Sartre in Paris (Click to Fly)</title>
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.12.0/mapbox-gl.css" rel="stylesheet">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.12.0/mapbox-gl.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div id="map"></div>
+<div id="features">
+  <section id="gallimard-publishing">
+    <h3>Gallimard Publishing</h3>
+    <h4>Albert Camus</h4>
+    <p><strong>Publisher of his major works</strong></p>
+    <p>Published "The Stranger" and "The Plague".</p>
+  </section>
+
+  <section id="saint-germain-des-prs">
+    <h3>Saint-Germain-des-Prs</h3>
+    <h4>Albert Camus</h4>
+    <p><strong>Literary district he frequented</strong></p>
+    <p>Met Sartre and other intellectuals here.</p>
+  </section>
+
+  <section id="thatre-de-lodon-1">
+    <h3>Thatre de lOdon</h3>
+    <h4>Albert Camus</h4>
+    <p><strong>His plays were performed here</strong></p>
+    <p>Supported emerging theater movements.</p>
+  </section>
+
+  <section id="panthon-1">
+    <h3>Panthon</h3>
+    <h4>Albert Camus</h4>
+    <p><strong>Honored for his contributions</strong></p>
+    <p>Recognized posthumously for his impact on literature.</p>
+  </section>
+
+  <section id="rue-de-la-huchette">
+    <h3>Rue de la Huchette</h3>
+    <h4>Albert Camus</h4>
+    <p><strong>Lived here during early years</strong></p>
+    <p>A small apartment where he wrote his early essays.</p>
+  </section>
+
+  <section id="baudelaires-house-rue-de-seine">
+    <h3>Baudelaires House (Rue de Seine)</h3>
+    <h4>Charles Baudelaire</h4>
+    <p><strong>His birthplace</strong></p>
+    <p>Baudelaire was born here in 1821.</p>
+  </section>
+
+  <section id="htel-pimodan">
+    <h3>Hitel Pimodan</h3>
+    <h4>Charles Baudelaire</h4>
+    <p><strong>His residence, now Hitel de Lauzun</strong></p>
+    <p>Here, he wrote some of his most famous poems.</p>
+  </section>
+
+  <section id="sainte-anne-asylum">
+    <h3>Sainte-Anne Asylum</h3>
+    <h4>Charles Baudelaire</h4>
+    <p><strong>Where he was treated for illness</strong></p>
+    <p>Suffered from health issues towards the end of his life.</p>
+  </section>
+
+  <section id="panthon-2">
+    <h3>Panthon</h3>
+    <h4>Charles Baudelaire</h4>
+    <p><strong>Memorial plaque in his honor</strong></p>
+    <p>Honored as a transformative poet.</p>
+  </section>
+
+  <section id="le-flore-caf">
+    <h3>Le Flore Caf</h3>
+    <h4>Charles Baudelaire</h4>
+    <p><strong>Met with other poets</strong></p>
+    <p>Discussed poetry and art with his peers.</p>
+  </section>
+
+  <section id="sands-house">
+    <h3>Sands House</h3>
+    <h4>George Sand</h4>
+    <p><strong>Residence in Paris</strong></p>
+    <p>Hosted literary salons with writers like Balzac and Flaubert.</p>
+  </section>
+
+  <section id="cafede-la-paix-1">
+    <h3>Cafede la Paix</h3>
+    <h4>George Sand</h4>
+    <p><strong>A meeting place for writers</strong></p>
+    <p>Met with contemporaries to discuss literature and politics.</p>
+  </section>
+
+  <section id="thatre-de-lodon-2">
+    <h3>Thatre de lOdon</h3>
+    <h4>George Sand</h4>
+    <p><strong>Supported literary performances</strong></p>
+    <p>Sand supported emerging playwrights and feminist ideas here.</p>
+  </section>
+
+  <section id="panthon-3">
+    <h3>Panthon</h3>
+    <h4>George Sand</h4>
+    <p><strong>Location of her literary recognition</strong></p>
+    <p>Honored here for her contribution to French literature.</p>
+  </section>
+
+  <section id="rue-de-rivoli">
+    <h3>Rue de Rivoli</h3>
+    <h4>George Sand</h4>
+    <p><strong>Street of literary gatherings</strong></p>
+    <p>Walked this famous street, a symbol of Parisian life.</p>
+  </section>
+
+  <section id="cafede-flore-1">
+    <h3>Cafede Flore</h3>
+    <h4>Guillaume Apollinaire</h4>
+    <p><strong>Met with Picasso and other artists</strong></p>
+    <p>Center of avant-garde discussions.</p>
+  </section>
+
+  <section id="rue-saint-jacques">
+    <h3>Rue Saint-Jacques</h3>
+    <h4>Guillaume Apollinaire</h4>
+    <p><strong>His residence</strong></p>
+    <p>Lived here while writing his most famous poems.</p>
+  </section>
+
+  <section id="louvre-museum">
+    <h3>Louvre Museum</h3>
+    <h4>Guillaume Apollinaire</h4>
+    <p><strong>Source of inspiration for his poetry</strong></p>
+    <p>His poetry often referenced classical art.</p>
+  </section>
+
+  <section id="panthon-4">
+    <h3>Panthon</h3>
+    <h4>Guillaume Apollinaire</h4>
+    <p><strong>Honored after his death</strong></p>
+    <p>Memorial plaque in his name.</p>
+  </section>
+
+  <section id="montparnasse-cemetery">
+    <h3>Montparnasse Cemetery</h3>
+    <h4>Guillaume Apollinaire</h4>
+    <p><strong>Final resting place</strong></p>
+    <p>Buried here alongside other artists.</p>
+  </section>
+
+  <section id="maison-de-balzac-passy">
+    <h3>Maison de Balzac (Passy)</h3>
+    <h4>Honor de Balzac</h4>
+    <p><strong>His residence, now a museum</strong></p>
+    <p>Here, Balzac wrote many novels, including "Eugnie Grandet".</p>
+  </section>
+
+  <section id="rue-cassini">
+    <h3>Rue Cassini</h3>
+    <h4>Honor de Balzac</h4>
+    <p><strong>Another residence</strong></p>
+    <p>Lived here while writing his early works.</p>
+  </section>
+
+  <section id="rue-visconti">
+    <h3>Rue Visconti</h3>
+    <h4>Honor de Balzac</h4>
+    <p><strong>His printing workshop</strong></p>
+    <p>Failed as a printer here, leading to debt but creative growth.</p>
+  </section>
+
+  <section id="comdie-franaise">
+    <h3>Comdie-Franaise</h3>
+    <h4>Honor de Balzac</h4>
+    <p><strong>Premiered his play "Les Ressources de Quinola"</strong></p>
+    <p>His connection to the world of theater.</p>
+  </section>
+
+  <section id="panthon-5">
+    <h3>Panthon</h3>
+    <h4>Honor de Balzac</h4>
+    <p><strong>Honored as a literary giant</strong></p>
+    <p>Although not buried here, he is remembered as a French icon.</p>
+  </section>
+
+  <section id="pre-lachaise-cemetery">
+    <h3>Pre Lachaise Cemetery</h3>
+    <h4>Honor de Balzac</h4>
+    <p><strong>His final resting place</strong></p>
+    <p>Buried here, his tomb is a place of homage for readers.</p>
+  </section>
+
+  <section id="rue-de-tournon">
+    <h3>Rue de Tournon</h3>
+    <h4>Honor de Balzac</h4>
+    <p><strong>Frequented by Balzac for inspiration</strong></p>
+    <p>Walked this area to observe Parisian life for his novels.</p>
+  </section>
+
+  <section id="cafede-flore-2">
+    <h3>Cafede Flore</h3>
+    <h4>Jean-Paul Sartre and Simone de Beauvoir</h4>
+    <p><strong>Their regular meeting place</strong></p>
+    <p>Sartre and Beauvoir discussed existentialism here.</p>
+  </section>
+
+  <section id="les-deux-magots">
+    <h3>Les Deux Magots</h3>
+    <h4>Jean-Paul Sartre and Simone de Beauvoir</h4>
+    <p><strong>Another favorite caf</strong></p>
+    <p>They met with other writers like Camus and Malraux.</p>
+  </section>
+
+  <section id="sorbonne-university">
+    <h3>Sorbonne University</h3>
+    <h4>Jean-Paul Sartre and Simone de Beauvoir</h4>
+    <p><strong>Where they studied and taught</strong></p>
+    <p>Both studied philosophy here and later became public figures.</p>
+  </section>
+
+  <section id="rue-bonaparte">
+    <h3>Rue Bonaparte</h3>
+    <h4>Jean-Paul Sartre and Simone de Beauvoir</h4>
+    <p><strong>Their residence</strong></p>
+    <p>Lived together while working on their philosophical texts.</p>
+  </section>
+
+  <section id="panthon-6">
+    <h3>Panthon</h3>
+    <h4>Jean-Paul Sartre and Simone de Beauvoir</h4>
+    <p><strong>Memorial plaque honoring them</strong></p>
+    <p>Their remains were eventually transferred here in 1986.</p>
+  </section>
+
+  <section id="rue-de-seine">
+    <h3>Rue de Seine</h3>
+    <h4>Jean-Paul Sartre and Simone de Beauvoir</h4>
+    <p><strong>Frequented for bookshops and cafes</strong></p>
+    <p>Walked along this street for inspiration and meetings.</p>
+  </section>
+
+  <section id="thatre-de-lodon-3">
+    <h3>Thatre de lOdon</h3>
+    <h4>Jean-Paul Sartre and Simone de Beauvoir</h4>
+    <p><strong>Supported avant-garde theater</strong></p>
+    <p>Sartre's plays were performed here.</p>
+  </section>
+
+  <section id="prousts-house-boulevard-haussmann">
+    <h3>Prousts House (Boulevard Haussmann)</h3>
+    <h4>Marcel Proust</h4>
+    <p><strong>Prousts residence</strong></p>
+    <p>NaN</p>
+  </section>
+
+  <section id="ritz-paris">
+    <h3>Ritz Paris</h3>
+    <h4>Marcel Proust</h4>
+    <p><strong>Frequented for tea and inspiration</strong></p>
+    <p>NaN</p>
+  </section>
+
+  <section id="cafede-la-paix-2">
+    <h3>Cafede la Paix</h3>
+    <h4>Marcel Proust</h4>
+    <p><strong>A literary meeting point</strong></p>
+    <p>NaN</p>
+  </section>
+
+  <section id="jardin-du-luxembourg">
+    <h3>Jardin du Luxembourg</h3>
+    <h4>Marcel Proust</h4>
+    <p><strong>A place of quiet reflection</strong></p>
+    <p>NaN</p>
+  </section>
+
+  <section id="panthon-7">
+    <h3>Panthon</h3>
+    <h4>Marcel Proust</h4>
+    <p><strong>Location of his familys tomb</strong></p>
+    <p>NaN</p>
+  </section>
+
+  <section id="htel-des-trangers">
+    <h3>Hitel des trangers</h3>
+    <h4>Paul Verlaine and Arthur Rimbaud</h4>
+    <p><strong>Their first meeting place</strong></p>
+    <p>Verlaine and Rimbaud first met here, beginning a stormy affair.</p>
+  </section>
+
+  <section id="cafeprocope-1">
+    <h3>CafeProcope</h3>
+    <h4>Paul Verlaine and Arthur Rimbaud</h4>
+    <p><strong>Frequented for literary discussions</strong></p>
+    <p>They met other poets and discussed Symbolism.</p>
+  </section>
+
+  <section id="rue-campagne-premire">
+    <h3>Rue Campagne-Premire</h3>
+    <h4>Paul Verlaine and Arthur Rimbaud</h4>
+    <p><strong>Verlaines residence</strong></p>
+    <p>Verlaine lived here during his later years.</p>
+  </section>
+
+  <section id="cafede-la-nouvelle-athnes">
+    <h3>Cafede la Nouvelle Athnes</h3>
+    <h4>Paul Verlaine and Arthur Rimbaud</h4>
+    <p><strong>Met with other avant-garde poets</strong></p>
+    <p>Known for gatherings of artists and poets.</p>
+  </section>
+
+  <section id="panthon-8">
+    <h3>Panthon</h3>
+    <h4>Paul Verlaine and Arthur Rimbaud</h4>
+    <p><strong>Memorial plaque honoring them</strong></p>
+    <p>Commemorated as influential French poets.</p>
+  </section>
+
+  <section id="rue-des-martyrs">
+    <h3>Rue des Martyrs</h3>
+    <h4>Paul Verlaine and Arthur Rimbaud</h4>
+    <p><strong>Walked here for inspiration</strong></p>
+    <p>A famous literary and artistic district they frequented.</p>
+  </section>
+
+  <section id="montmartre-cemetery">
+    <h3>Montmartre Cemetery</h3>
+    <h4>Paul Verlaine and Arthur Rimbaud</h4>
+    <p><strong>Verlaines final resting place</strong></p>
+    <p>Buried here among other Parisian artists.</p>
+  </section>
+
+  <section id="hugos-house-place-des-vosges">
+    <h3>Hugos House (Place des Vosges)</h3>
+    <h4>Victor Hugo</h4>
+    <p><strong>Hugo's residence, now a museum</strong></p>
+    <p>Here, Hugo wrote many of his works and held literary gatherings.</p>
+  </section>
+
+  <section id="notre-dame-cathedral">
+    <h3>Notre-Dame Cathedral</h3>
+    <h4>Victor Hugo</h4>
+    <p><strong>Setting of "Notre-Dame de Paris"</strong></p>
+    <p>Inspired his famous novel, "Notre-Dame de Paris".</p>
+  </section>
+
+  <section id="panthon-9">
+    <h3>Panthon</h3>
+    <h4>Victor Hugo</h4>
+    <p><strong>Hugo's final resting place</strong></p>
+    <p>His grand funeral procession ended here, attended by thousands.</p>
+  </section>
+
+  <section id="avenue-victor-hugo">
+    <h3>Avenue Victor Hugo</h3>
+    <h4>Victor Hugo</h4>
+    <p><strong>Street named in his honor</strong></p>
+    <p>A tribute to his legacy in Paris.</p>
+  </section>
+
+  <section id="cafeprocope-2">
+    <h3>CafeProcope</h3>
+    <h4>Victor Hugo</h4>
+    <p><strong>A historic literary cafeHugo visited</strong></p>
+    <p>Frequented by Hugo and other intellectuals of his era.</p>
+  </section>
+
+  <section id="zolas-house">
+    <h3>Zolas House</h3>
+    <h4>mile Zola</h4>
+    <p><strong>Residence in Paris</strong></p>
+    <p>Zola wrote many of his works here, including his Rougon-Macquart series.</p>
+  </section>
+
+  <section id="le-figaro">
+    <h3>Le Figaro</h3>
+    <h4>mile Zola</h4>
+    <p><strong>Newspaper where he published "J'accuse"</strong></p>
+    <p>The site of Zolas famous open letter defending Dreyfus.</p>
+  </section>
+
+  <section id="panthon-10">
+    <h3>Panthon</h3>
+    <h4>mile Zola</h4>
+    <p><strong>Final resting place</strong></p>
+    <p>His remains were transferred here as a tribute to his courage.</p>
+  </section>
+
+  <section id="palais-de-justice">
+    <h3>Palais de Justice</h3>
+    <h4>mile Zola</h4>
+    <p><strong>Dreyfus trial location</strong></p>
+    <p>Zola became a vocal advocate for Dreyfus's innocence here.</p>
+  </section>
+
+  <section id="cafede-flore-3">
+    <h3>Cafede Flore</h3>
+    <h4>mile Zola</h4>
+    <p><strong>Literary cafehe visited</strong></p>
+    <p>Met with other writers and intellectuals.</p>
+  </section>
+</div>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>

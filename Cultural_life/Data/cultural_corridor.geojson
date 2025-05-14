@@ -1,0 +1,7 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 2.310966619551745, 48.845207917721055 ], [ 2.327725331955075, 48.875625303605929 ], [ 2.356180375718612, 48.857091294991626 ], [ 2.379115320315294, 48.886193405735085 ], [ 2.38797005566088, 48.837999903941927 ] ] } }
+]
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Paris Exhibitions – 2025 Calendar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.1.0/mapbox-gl.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="map"></div>
+
+  <div id="left-panel">
+    <h3>Nearby Exhibitions</h3>
+    <div id="chart-scroll">
+        <canvas id="museumBarChart"></canvas>
+    </div>
+  </div>
+  
+  <div id="control-panel">
+    <h4>🧭 Layer Control</h4>
+    <label><input type="checkbox" id="toggle-exhibitions" checked /> Show Exhibitions</label><br/>
+    <label><input type="checkbox" id="toggle-museums" checked /> Show Museums</label><hr/>
+    <label><input type="checkbox" id="toggle-corridor" checked /> Show Corridor</label>
+
+    <h4>🏛️ Filter Museums</h4>
+    <div id="museum-filters"></div>
+  </div>
+  
+  <div id="calendar-panel">
+    <div class="calendar-header">
+      <button id="prevMonth">◀</button>
+      <span id="monthTitle">May 2025</span>
+      <button id="nextMonth">▶</button>
+    </div>
+    <table id="calendar-table"></table>
+  </div>
+
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.1.0/mapbox-gl.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

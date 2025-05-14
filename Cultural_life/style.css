@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+#map {
+  width: 100vw;
+  height: 100vh;
+}
+#calendar-panel {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 250px;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.3);
+  z-index: 3;
+}
+.calendar-header {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+.calendar-header button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 8px;
+}
+#calendar-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+#calendar-table td {
+  width: 14.2%;
+  height: 30px;
+  text-align: center;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+td.has-event {
+  background-color: #ccccff;
+}
+td.today {
+  background-color: #2b8cbe;
+  color: white;
+  font-weight: bold;
+}
+td.upcoming {
+  background-color: #ffd700;
+  font-weight: bold;
+}
+td:hover {
+  background-color: #999;
+  color: white;
+}
+#control-panel {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 200px;
+  background: white;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  font-size: 13px;
+  z-index: 5;
+}
+#control-panel h4 {
+  margin: 5px 0;
+}
+#control-panel label {
+  display: block;
+  margin: 2px 0;
+}
+#left-panel {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 280px;
+  max-height: 90vh;
+  background: white;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  z-index: 10;
+  overflow: hidden;
+  font-size: 13px;
+}
+#chart-scroll {
+  height: 600px;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+#museumBarChart {
+  width: 100%;
+}

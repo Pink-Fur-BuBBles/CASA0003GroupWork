@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Paris Compare Heatmap</title>
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.12.0/mapbox-gl.css" rel="stylesheet" />
+  <link href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.4.0/mapbox-gl-compare.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="comparison-container">
+    <div id="before" class="map"></div>
+    <div id="after" class="map"></div>
+  </div>
+
+  <div id="layer-toggle-left">
+    <strong>Commerce Layers</strong><br>
+    <label><input type="checkbox" data-layer="commerce-heat"> Heatmap</label><br>
+    <label><input type="checkbox" data-layer="commerce-point-layer" checked> Points</label>
+  </div>
+
+  <div id="layer-toggle-right">
+    <strong>Transport Layers</strong><br>
+    <label><input type="checkbox" data-layer="transport-heat"> Heatmap</label><br>
+    <label><input type="checkbox" data-layer="transport-point-layer" checked> Points</label>
+  </div>
+
+  <div id="chart-panel">
+    <div id="chart-controls">
+      <select id="business-type-select"></select>
+      <button id="toggle-chart-type">Switch to Pie</button>
+    </div>
+    <canvas id="business-chart"></canvas>
+  </div>
+
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.12.0/mapbox-gl.js"></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.4.0/mapbox-gl-compare.js"></script>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6/turf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
