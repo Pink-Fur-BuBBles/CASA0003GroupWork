@@ -1,0 +1,375 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+#map, #ods-container {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.mapboxgl-popup {
+  max-width: 300px;
+  font-family: Arial, sans-serif;
+}
+.mapboxgl-popup-content {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.88);
+  padding: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 15px;
+  line-height: 1.6;
+}
+#filter-panel {
+  width: 250px;
+  min-height: 220px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-size: 18px;
+  z-index: 1;
+  max-height: 90%;
+  overflow-y: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#filter-panel label {
+  display: block;
+  margin-bottom: 4px;
+}
+#filter-panel input[type="range"] {
+  width: 100%;
+  margin-bottom: 5px;
+}
+#filter-panel button {
+  margin-top: 10px;
+  padding: 6px 14px;
+  background-color: rgba(255, 255, 255, 0.75); /* 半透明白 */
+  color: #333;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  font-family: 'Cinzel', serif;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+#filter-panel button:hover {
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+#year-slider {
+  width: 100%;
+  margin-top: 5px;
+}
+#year-display {
+  font-size: 14px;
+  margin-top: 3px;
+}
+#play-toggle-button {
+  margin-top: 6px;
+  padding: 4px 10px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#play-toggle-button:hover {
+  background-color: #222;
+}
+
+.style-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+#style-content {
+  margin-top: 10px;
+}
+.style-block {
+  margin-bottom: 20px;
+}
+#toggle-info {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 3;
+
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  color: black;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  font-family: 'Cinzel', serif;
+
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+#toggle-info:hover {
+  background: rgba(255, 255, 255, 0.25);
+  color: black;
+}
+#info-panel {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  width: 320px;
+  max-height: 85%;
+  overflow-y: auto;
+  background: rgba(255, 255, 255, 0.92);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  z-index: 2;
+  transition: transform 0.3s ease;
+  background-size: cover;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  font-family: 'EB Garamond', serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+#info-panel.hidden {
+  transform: translateX(110%);
+}
+.title-icon {
+  width: 48px;
+  height: 48px;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+.style-images {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  margin: 10px 0;
+}
+.style-images img {
+  width: 48%;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+}
+
+/* 右侧浮窗样式 */
+#ods-chart-panel {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  width: 420px;
+  height: 80%;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 16px 0 0 16px;
+  box-shadow: -4px 0 12px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  transition: right 0.3s ease;
+  z-index: 1005;
+}
+#ods-chart-panel.collapsed {
+  right: -420px;
+}
+
+#ods-chart-panel iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* 弹开/收起按钮样式 */
+#ods-toggle-button {
+  position: absolute;
+  top: 50%;
+  right: 420px; /* 将由 JS 控制 */
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccc;
+  border-radius: 8px 0 0 8px;
+  padding: 6px 12px;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 1006;
+  font-family: 'Cinzel', serif;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease;
+  display: none;
+}
+
+#ods-chart-panel.collapsed {
+  right: -420px;  /* 将面板滑出屏幕 */
+}
+
+#map-toggle-switch {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1100;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 40px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #cccccc;
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
+  transition: background-color 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 36px;
+  width: 96px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  border-radius: 18px;
+  transition: transform 0.4s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+input:checked + .slider:before {
+  transform: translateX(100px);
+}
+
+.label-left,
+.label-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(0, 0, 0);
+  font-size: 13px;
+  font-weight: bold;
+  font-family: 'Cinzel', serif;
+  pointer-events: none;
+}
+
+.label-left {
+  left: 12px;
+}
+
+.label-right {
+  right: 12px;
+}
+/* 全局毛玻璃风格面板 */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  color: black; /* ✅ 改为黑色字体 */
+}
+
+/* Mapbox popup 弹窗 */
+.mapboxgl-popup-content {
+  background: rgba(255, 255, 255, 0.08) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  font-family: 'Cormorant Garamond', serif;
+  color: black; /* ✅ 改为黑色字体 */
+}
+
+/* 筛选面板 */
+#filter-panel {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  color: black; /* ✅ 改为黑色字体 */
+  width: 350px;      /* 固定像素宽度 */
+  margin-top: 40px;   /* 根据需要调节高度 */
+}
+
+/* 信息面板 */
+#info-panel {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  color: black; /* ✅ 改为黑色字体 */
+  width: 400px;      /* 固定像素宽度 */
+}
+
+/* 时间轴容器 */
+.timeline-panel .timeline-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  padding-left: 0px; /* 给 dot 留出空间 */
+}
+
+/* 每一项（圆点 + 复选框） */
+.timeline-panel .timeline-item {
+  display: flex;
+  align-items: center;
+  margin-top: -20px;
+  margin-bottom: -20px;
+  position: relative;
+}
+
+/* 时间轴圆点 */
+.timeline-panel .timeline-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #33333300;
+  border-radius: 50%;
+  position: absolute;
+  left: 500;
+}
+
+/* 下方箭头（竖线） */
+.timeline-panel .timeline-arrow {
+  width: 2px;
+  height: 50px;
+  background-color: #999;
+  margin-left: 10px;
+  margin-bottom: 8px;
+}
+

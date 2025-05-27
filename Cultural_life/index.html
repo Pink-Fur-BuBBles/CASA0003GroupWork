@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Paris Exhibitions – 2025 Calendar</title>
+  <link rel="icon" href="icons/culture_logo.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdn.jsdelivr.net/npm/matter-js@0.19.0/build/matter.min.js"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.1.0/mapbox-gl.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="map"></div>
+
+  <canvas id="physics-canvas"></canvas>
+  
+  <div id="calendar-panel">
+    <div class="calendar-header">
+      <button id="prevMonth">◀</button>
+      <span id="monthTitle">May 2025</span>
+      <button id="nextMonth">▶</button>
+    </div>
+    <table id="calendar-table"></table>
+    <div class="calendar-legend">
+      <div class="legend-item">
+        <span class="legend-dot today-dot"></span> Today
+      </div>
+      <div class="legend-item">
+        <span class="legend-dot upcoming-dot"></span> Upcoming
+      </div>
+      <div class="legend-item">
+        <span class="legend-dot unavailable-dot"></span> Unavailable
+      </div>
+    </div>
+    <div id="description">
+     <p>
+      Explore upcoming exhibitions with our interactive calendar: click any date to see which shows will be open over the next seven days.  
+      Then click on an exhibition marker to view full details, including time, location, and description.
+    </p>
+    </div>
+    <h4 class="layer-control-title">🧭 Layer Control</h4>
+      <div class="layer-toggle-group">
+        <button id="toggle-exhibitions" class="layer-toggle selected">Exhibitions</button>
+        <button id="toggle-museums" class="layer-toggle selected">Museums</button>
+      </div>
+
+    <h4 class="museum-filter-title">🏛️ Filter Museums</h4>
+    <div id="museum-filters" class="icon-filter-group">
+      <div class="icon-btn selected" data-type="Art" title="Art"></div>
+      <div class="icon-btn selected" data-type="History" title="History"></div>
+      <div class="icon-btn selected" data-type="Science" title="Science"></div>
+      <div class="icon-btn selected" data-type="Unclassified" title="Unclassified"></div>
+    </div>
+    <button id="resetAll" class="reset-button">Reset</button>
+  </div>
+  </div>
+
+   <!-- —— 泡泡图功能介绍 —— -->
+  <div id="bubble-description">
+    <p>
+      When you click on a museum icon on the map, an interactive bubble will appear in that area. The size of each bubble reflects the number of nearby exhibitions and estimated visitor flow—larger bubbles indicate greater popularity. Bubble colors differentiate museum categories (Art, History, Science, etc.). Hover over any bubble to reveal the museum’s name and its total exhibition count at a glance.
+    </p>
+  </div>
+  <div id="bubble-tooltip" style="display:none;"></div>
+  
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.1.0/mapbox-gl.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

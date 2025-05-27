@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paris Public Art Map</title>
+    <link rel="icon" href="icons/culture_logo.png" type="image/x-icon">
+    
+    <!-- Mapbox CSS -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css' rel='stylesheet' />
+    
+    <!-- Chart.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Left Sidebar -->
+    <div class="sidebar glass-panel">
+        <h1>Paris Public Art Map</h1>
+        
+        <!-- Filters Section -->
+        <div class="filters-section">
+            <h3>Filter by Type</h3>
+            <div class="filter-checkboxes">
+              <label>
+                <input type="checkbox" value="street art" checked>
+                <span class="icon-label">
+                  <span class="color-dot" style="background-color: #e74c3c;"></span> Street Art
+                </span>
+              </label>
+              <label>
+                <input type="checkbox" value="commande" checked>
+                <span class="icon-label">
+                  <span class="color-dot" style="background-color: #3498db;"></span> Commission
+                </span>
+              </label>
+              <label>
+                <input type="checkbox" value="un_pour_cent" checked>
+                <span class="icon-label">
+                  <span class="color-dot" style="background-color: #2ecc71;"></span> 1% Art
+                </span>
+              </label>
+              <label>
+                <input type="checkbox" value="others" checked>
+                <span class="icon-label">
+                  <span class="color-dot" style="background-color: #95a5a6;"></span> Others/Unknown
+                </span>
+              </label>
+            </div>
+
+            
+            <h3>Filter By Dirtricts</h3>
+            <select id="municipalitySelect">
+                <option value="all">All Arrondissements</option>
+            </select>
+            
+            <button id="resetFilters" class="reset-btn">Reset Filters</button>
+        </div>
+        
+        <!-- Statistics Section -->
+        <div class="stats-section">
+            <div class="stat-item">
+                <span class="stat-label">Total Artworks:</span>
+                <span class="stat-value" id="totalCount">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Selected Dirtricts:</span>
+                <span class="stat-value" id="selectedMunicipality">All</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Map Container -->
+    <div id="map"></div>
+    
+    <!-- Bottom Panel -->
+    <div class="bottom-panel" id="bottomPanel">
+        <div class="panel-toggle" id="panelToggle">
+            <span>▲ Analytics Dashboard ▲</span>
+        </div>
+        
+        <div class="panel-content" id="panelContent">
+            <div class="charts-container">
+                <!-- Left Charts -->
+                <div class="chart-section">
+                    <h3>Regional Art Analysis</h3>
+                    <div class="chart-wrapper">
+                        <canvas id="typeDistributionChart"></canvas>
+                    </div>
+                    <div class="chart-wrapper">
+                        <canvas id="accessibilityChart"></canvas>
+                    </div>                    
+                </div>
+                
+                <!-- Right Charts -->
+                <div class="chart-section">
+                    <h3>Quantity Statistics</h3>
+                    <div class="chart-wrapper">
+                        <canvas id="municipalityBarChart"></canvas>
+                    </div>
+                    <div class="chart-wrapper">
+                        <canvas id="municipalityPieChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="analysis-text full-width" id="commentBlock">
+  <h4>Comment</h4>
+  <p>
+  <strong>1. Artwork Classification</strong><br><br>
+  <strong>Commande (302):</strong> This category includes commissioned artworks, which are created upon request by public institutions, organizations, or private sponsors. These artworks are typically thematic and are produced under specific directives.<br><br>
+  <strong>Street Art (68):</strong> Representing urban creativity, this category includes unofficial street artworks such as graffiti, murals, and spontaneous creations. These works are characterized by their informal nature and are not commissioned by official institutions.<br><br>
+  <strong>Un Pour Cent (309):</strong> Also known as the "1% Art Policy," this category includes artworks funded under the French policy that allocates 1% of public construction budgets for the creation and installation of art. These works are typically integrated into public buildings or urban spaces.<br><br>
+
+  <strong>2. Accessibility Classification (Accessibilité)</strong><br><br>
+  <strong>Accessible (382):</strong> Publicly accessible artworks that can be viewed and experienced without restrictions.<br><br>
+  <strong>Accessible (immatériel):</strong> Intangible accessible artworks, including digital artworks, performances, or other forms of non-physical art.<br><br>
+  <strong>Accessible (oeuvre reproductible):</strong> Reproducible artworks, including digital copies or other forms of art that can be replicated.<br><br>
+  <strong>Art dans les Gares (142):</strong> Artworks located within train stations, offering cultural experiences to commuters and travelers.<br><br>
+  <strong>Déposée (17):</strong> Deposited artworks, which may be temporarily or permanently stored in specific locations.<br><br>
+  <strong>Disparue (2):</strong> Disappeared artworks, which have been lost, destroyed, or removed.<br><br>
+  <strong>Inconnue (108):</strong> Unknown status artworks, where the current status or location is not clearly documented.<br><br>
+  <strong>Jamais Réalisée (1):</strong> Unfulfilled artworks that were planned but never actually created or installed.<br><br>
+  <strong>Non Visible (206):</strong> Artworks that are not visible to the public, either due to being hidden, damaged, or placed in restricted areas.<br><br>
+  <strong>Visible (40):</strong> Artworks that are clearly visible and accessible to the public.
+</p>
+
+
+                    </div>
+        </div>
+    </div>
+    
+    <!-- Scripts -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

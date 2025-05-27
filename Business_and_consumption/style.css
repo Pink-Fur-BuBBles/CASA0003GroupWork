@@ -1,0 +1,198 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+#comparison-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#control-panel {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 14px;
+  border-radius: 12px;
+  z-index: 1000;
+  max-height: 90vh;
+  overflow-y: auto;
+  font-size: 14px;
+  backdrop-filter: blur(8px); /* 毛玻璃核心 */
+  background-color: rgba(30, 30, 30, 0.4); /* 深灰玻璃层 */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  color: white; /* ✅ 白色字体 */
+}
+
+#control-panel label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+#control-panel select,
+#control-panel input[type="checkbox"] {
+  margin-bottom: 10px;
+}
+
+/* Reset 按钮改为透明背景 + 白边框 */
+#reset-btn {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Cinzel', serif;
+}
+#reset-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+canvas {
+  display: block;
+  margin: 0 auto 50px auto;
+}
+
+#barChart {
+  margin-top: 60px;
+}
+
+.chart-block {
+  margin-bottom: 40px;
+}
+
+.chart-block h4 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.chart-block canvas {
+  display: block;
+  margin: 0 auto;
+}
+
+#chart-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 360px;
+  background: rgba(255, 255, 255, 0.95);
+  border-left: 1px solid #ccc;
+  padding: 14px;
+  overflow-y: auto;
+  overflow-x: visible; /* ✅ 允许按钮溢出可见 */
+  transition: transform 0.3s;
+  z-index: 1001;
+   /* ✅ 毛玻璃效果 */
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.5);  /* 半透明浅白 */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+
+  /* ✅ 黑色字体 */
+  color: black;
+  font-family: 'EB Garamond', serif;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  max-height: 90vh;
+  font-size: 14px;
+}
+
+#chart-panel.collapsed {
+  transform: translateX(100%);
+}
+
+#toggle-panel {
+  position: fixed;
+  top: 10%;
+  right: 360px; /* 按钮贴在面板左侧 */
+  transform: translateY(-50%);
+  z-index: 9999;
+  background: #AD84C6;
+  color: white;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  width: 30px;
+  height: 40px;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  transition: right 0.3s ease;
+}
+#toggle-panel:hover {
+  background-color: #8C65A9;
+}
+.icon-inline {
+  height: 18px;
+  width: 18px;
+  vertical-align: middle;
+  margin-left: 6px;
+  border-radius: 4px;
+}
+
+/* 左侧筛选面板（Cinzel） */
+#control-panel,
+#control-panel label,
+#control-panel select,
+#control-panel input[type="checkbox"],
+#control-panel button,
+#control h3 {
+  font-family: 'Cinzel', serif;
+  color: rgb(255, 255, 255);
+}
+
+/* 行政区选择器下拉栏 */
+#arr-filter {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+
+/* 右侧图表面板（EB Garamond） */
+#chart-panel,
+#chart-panel canvas,
+#chart-panel h4 {
+  font-family: 'EB Garamond', serif;
+}
+
+.chart-description {
+  margin-top: 24px;
+  padding: 16px;
+  background-color: #f5f5f55b;
+  border-radius: 6px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* 标题 */
+.chart-description h4 {
+  margin: 0 0 12px;
+  font-size: 16px;
+  color: #222;
+}
+
+/* 有序列表整体缩进 */
+.chart-description ol {
+  margin: 0;
+  padding-left: 20px;
+}
+
+/* 列表项之间留空 */
+.chart-description li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}

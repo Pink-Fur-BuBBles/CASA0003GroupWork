@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Paris Commerce & Transport Compare</title>
+  <link rel="icon" href="icons/commerce_logo.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=EB+Garamond&display=swap" rel="stylesheet">
+
+  <!-- Mapbox GL JS -->
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.1.0/mapbox-gl.js"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.1.0/mapbox-gl.css" rel="stylesheet" />
+
+  <!-- Mapbox Compare -->
+  <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.4.0/mapbox-gl-compare.js"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.4.0/mapbox-gl-compare.css" rel="stylesheet" />
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- 自定义样式 -->
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- 左侧控制面板 -->
+  <div id="control-panel">
+    <strong>Filter by Type :</strong><br/>
+    
+    <br/><label>
+      <input type="checkbox" class="type-filter" value="antiquaire" checked>
+      Antiquaire <img src="icons/icon_antiquaire.png" class="icon-inline">
+    </label>
+    <label>
+      <input type="checkbox" class="type-filter" value="bouquiniste" checked>
+      Bouquiniste <img src="icons/icon_bouquiniste.png" class="icon-inline">
+    </label>
+    <label>
+      <input type="checkbox" class="type-filter" value="foire d'art" checked>
+      Foire d’art <img src="icons/icon_foire_d_art.png" class="icon-inline">
+    </label>
+    <label>
+      <input type="checkbox" class="type-filter" value="galerie d'art" checked>
+      Galerie d’art <img src="icons/icon_galerie_d_art.png" class="icon-inline">
+    </label>
+    <label>
+      <input type="checkbox" class="type-filter" value="grande distribution" checked>
+      Grande distribution <img src="icons/icon_grande_distribution.png" class="icon-inline">
+    </label>
+    <label>
+      <input type="checkbox" class="type-filter" value="librairie" checked>
+      Librairie <img src="icons/icon_librairie.png" class="icon-inline">
+    </label>
+    <label>
+      <input type="checkbox" class="type-filter" value="marché aux puces" checked>
+      Marché aux puces <img src="icons/icon_marche_aux_puces.png" class="icon-inline">
+    </label>
+    <label>
+      <input type="checkbox" class="type-filter" value="salle_de_vente" checked>
+      Salle de vente <img src="icons/icon_salle_de_vente.png" class="icon-inline">
+    </label>
+
+    <br/><strong>Select Arrondissement:</strong><br/>
+    <select id="arr-filter">
+      <option value="all">All</option>
+      <option value="1">1 - Louvre</option>
+      <option value="2">2 - Bourse</option>
+      <option value="3">3 - Temple</option>
+      <option value="4">4 - Hôtel-de-Ville</option>
+      <option value="5">5 - Panthéon</option>
+      <option value="6">6 - Luxembourg</option>
+      <option value="7">7 - Palais-Bourbon</option>
+      <option value="8">8 - Élysée</option>
+      <option value="9">9 - Opéra</option>
+      <option value="10">10 - Entrepôt</option>
+      <option value="11">11 - Popincourt</option>
+      <option value="12">12 - Reuilly</option>
+      <option value="13">13 - Gobelins</option>
+      <option value="14">14 - Observatoire</option>
+      <option value="15">15 - Vaugirard</option>
+      <option value="16">16 - Passy</option>
+      <option value="17">17 - Batignolles-Monceau</option>
+      <option value="18">18 - Butte-Montmartre</option>
+      <option value="19">19 - Buttes-Chaumont</option>
+      <option value="20">20 - Ménilmontant</option>
+    </select>
+    <br/>
+    <button id="reset-btn">Reset Filters</button>
+  </div>
+
+  <!-- 地图对比容器 -->
+  <div id="comparison-container">
+    <div id="map-commerce" class="map"></div>
+    <div id="map-transport" class="map"></div>
+  </div>
+
+ <!-- 图表面板 -->
+<div id="chart-panel">
+  <div id="chart-content">
+    <div class="chart-block">
+      <h4>Paris-wide Commerce Distribution</h4>
+      <canvas id="pieChart" width="300" height="200"></canvas>
+    </div>
+    <div class="chart-block">
+      <h4>Selected Arrondissement Distribution</h4>
+      <canvas id="barChart" width="300" height="200"></canvas>
+    </div>
+  </div>
+
+  <!-- 在 chart-panel 中，替换或新增如下文字区域 -->
+<div class="chart-description">
+  <h4>Findings</h4>
+  <ol>
+    <li>
+      The commercial density peaks along major metro and bus corridors,
+      indicating that transit networks guide the formation of shopping districts.
+    </li>
+    <li>
+      Districts around highly accessible stations exhibit stronger interconnectivity,
+      forming a “hub-and-spoke” spatial pattern.
+    </li>
+    <li>
+      Optimizing transit stops can promote commercial dispersion,
+      boosting tourist footfall and local economic vibrancy.
+    </li>
+  </ol>
+</div>
+
+</div>
+
+
+  <button id="toggle-panel">▶</button>
+
+  <!-- 自定义脚本 -->
+  <script src="script.js"></script>
+</body>
+</html>
