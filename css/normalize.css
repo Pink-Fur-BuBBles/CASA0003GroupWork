@@ -438,3 +438,10 @@ section {
   opacity: 0.7; /* 可选，让图更融入背景 */
   margin-bottom: 50px;
 }
+
+.email {
+  width: 30%;
+  height: auto;
+  pointer-events: none; /* 防止图片挡住交互区域 */
+  margin-bottom: -50px;
+}
