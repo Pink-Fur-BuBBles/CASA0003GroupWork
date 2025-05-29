@@ -431,9 +431,11 @@ section {
 }
 
 .gif_thinking {
+  width: auto;         /* 或你想要的尺寸 */
+  height: 100px;
+  object-fit: cover;   /* 保持居中剪裁，避免拉伸 */
+  vertical-align: middle;
   position: flex;
-  width: 20%; /* 图片宽度，可按需设置 */
-  height: auto; /* 保持宽高比 */
   pointer-events: none; /* 防止图片挡住交互区域 */
   opacity: 0.7; /* 可选，让图更融入背景 */
   margin-bottom: 50px;
