@@ -488,77 +488,6 @@ map.on('load', () => {
         })
       )
     ).then(() => {
-
-    map.addLayer({
-      id: "museum-icons",
-      type: "symbol",
-      source: "museums",
-      layout: {
-        "icon-image": [
-          "match", ["get", "category_grouped"],
-          "Art", "icon-art",
-          "History", "icon-history",
-          "Science", "icon-science",
-          "Unclassified", "icon-unclassified",
-          "icon-unclassified"
-        ],
-        "icon-size": 0.05,
-        "icon-allow-overlap": true,
-        "icon-ignore-placement": true,
-        paint: {
-        "circle-stroke-color": [
-          "case",
-          ["boolean", ["feature-state", "selected"], false],
-          "#FFD700",
-          "#ffffff"
-        ],
-        "circle-stroke-width": [
-          "case",
-          ["boolean", ["feature-state", "selected"], false],
-          3,
-          1
-        ]
-      }}
-    });
-    
-    map.addLayer({
-      id: "museum-overlay",
-      type: "symbol",
-      source: "museums",
-      layout: {
-        "icon-image": "black_circle",
-        "icon-size": 0.02,
-        "icon-allow-overlap": true
-      },
-      paint: {
-        "icon-opacity": [
-          "case",
-          ["boolean", ["feature-state", "added"], false],
-          0.35,
-          0
-        ]
-      }
-    });
-
-    map.addLayer({
-      id: "museum-icons-hover",
-      type: "symbol",
-      source: "museums",
-      layout: {
-        "icon-image": [
-          "match", ["get", "category_grouped"],
-          "Art", "icon-art",
-          "History", "icon-history",
-          "Science", "icon-science",
-          "Unclassified", "icon-unclassified",
-          "icon-unclassified"
-        ],
-        "icon-size": 0.1,
-        "icon-allow-overlap": true,
-        "icon-ignore-placement": true
-      },
-      filter: ["==", "name", ""]
-    });
   });
   
   // 加载新的 enriched 数据
@@ -584,6 +513,89 @@ map.on('load', () => {
       }
     });
     
+    return Promise.all(iconList.map(icon =>
+        new Promise((resolve, reject) => {
+          map.loadImage(icon.url, (error, image) => {
+            if (error) reject(error);
+            if (!map.hasImage(icon.name)) map.addImage(icon.name, image);
+            resolve();
+          });
+        })
+      ));
+    })
+    .then(() => {    
+      
+      map.addLayer({
+        id: "museum-icons",
+        type: "symbol",
+        source: "museums",
+        layout: {
+          "icon-image": [
+            "match", ["get", "category_grouped"],
+            "Art", "icon-art",
+            "History", "icon-history",
+            "Science", "icon-science",
+            "Unclassified", "icon-unclassified",
+            "icon-unclassified"
+          ],
+          "icon-size": 0.05,
+          "icon-allow-overlap": true,
+          "icon-ignore-placement": true,
+          paint: {
+          "circle-stroke-color": [
+            "case",
+            ["boolean", ["feature-state", "selected"], false],
+            "#FFD700",
+            "#ffffff"
+          ],
+          "circle-stroke-width": [
+            "case",
+            ["boolean", ["feature-state", "selected"], false],
+            3,
+            1
+          ]
+        }}
+      });
+      
+      map.addLayer({
+        id: "museum-overlay",
+        type: "symbol",
+        source: "museums",
+        layout: {
+          "icon-image": "black_circle",
+          "icon-size": 0.02,
+          "icon-allow-overlap": true
+        },
+        paint: {
+          "icon-opacity": [
+            "case",
+            ["boolean", ["feature-state", "added"], false],
+            0.35,
+            0
+          ]
+        }
+      });
+
+      map.addLayer({
+        id: "museum-icons-hover",
+        type: "symbol",
+        source: "museums",
+        layout: {
+          "icon-image": [
+            "match", ["get", "category_grouped"],
+            "Art", "icon-art",
+            "History", "icon-history",
+            "Science", "icon-science",
+            "Unclassified", "icon-unclassified",
+            "icon-unclassified"
+          ],
+          "icon-size": 0.1,
+          "icon-allow-overlap": true,
+          "icon-ignore-placement": true
+        },
+        filter: ["==", "name", ""]
+      });
+
     map.on("click", "museum-icons", (e) => {
       const p = e.features[0].properties;
       const coords = e.features[0].geometry.coordinates;
