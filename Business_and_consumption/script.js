@@ -1,5 +1,5 @@
 // ---------------------- CONFIG ----------------------
-mapboxgl.accessToken = 'pk.eyJ1IjoibGljaGFyZCIsImEiOiJjbTg4Y2h1Z2wwcXA2MmlzYnN6Y3MxbDB4In0.4Zl2BKk9jfaG9927_p-hkw';
+mapboxgl.accessToken = 'pk.eyJ1IjoicmljaGFyZC1jb25zdGFudGluZSIsImEiOiJjbWZtamJqeWswMmk1MmpvbnQzMmRjMHA0In0.fPxg8O3dFJ0VFutZudtWRQ';
 
 const typeLabels = {
   "antiquaire": "Antiquaire",
@@ -31,14 +31,14 @@ let selectionFromPoint = false;
 
 const mapCommerce = new mapboxgl.Map({
   container: 'map-commerce',
-  style: 'mapbox://styles/lichard/cmaqholjr01om01s47hekb84j',
+  style: 'mapbox://styles/richard-constantine/cmfo8b6pa00b601rgf3zu6gcs',
   center: [2.3522, 48.8566],
   zoom: 12
 });
 
 const mapTransport = new mapboxgl.Map({
   container: 'map-transport',
-  style: 'mapbox://styles/lichard/cmaqisbsp01of01s3ga6t89ep',
+  style: 'mapbox://styles/richard-constantine/cmfo9lwuq00bv01rf96im5e4w',
   center: [2.3522, 48.8566],
   zoom: 12
 });

@@ -1,8 +1,8 @@
-mapboxgl.accessToken = 'pk.eyJ1IjoibGljaGFyZCIsImEiOiJjbTg4Y2h1Z2wwcXA2MmlzYnN6Y3MxbDB4In0.4Zl2BKk9jfaG9927_p-hkw';
+mapboxgl.accessToken = 'pk.eyJ1IjoicmljaGFyZC1jb25zdGFudGluZSIsImEiOiJjbWZtamJqeWswMmk1MmpvbnQzMmRjMHA0In0.fPxg8O3dFJ0VFutZudtWRQ';
 
 const map = new mapboxgl.Map({
   container: 'map',
-  style: 'mapbox://styles/lichard/cmayickvu009s01r42eheb35n',
+  style: 'mapbox://styles/richard-constantine/cmfo9v25q00bc01rgeemq4co2',
   center: [2.35, 48.86],
   zoom: 12
 });
@@ -118,7 +118,7 @@ const render = Render.create({
     width: 180,
     height: window.innerHeight * 0.9,
     wireframes: false,
-    background: 'rgba(20, 20, 20, 0.5)',
+    background: 'rgba(81, 80, 80, 0.5)',
     pixelRatio: 2
   }
 });

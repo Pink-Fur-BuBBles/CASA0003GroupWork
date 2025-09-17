@@ -8,7 +8,7 @@ let selectedMunicipality = 'all';
 let selectedTypes = ['street art', 'commande', 'un_pour_cent', 'others'];
 
 // Initialize Mapbox
-mapboxgl.accessToken = 'pk.eyJ1IjoibGljaGFyZCIsImEiOiJjbTg4Y2h1Z2wwcXA2MmlzYnN6Y3MxbDB4In0.4Zl2BKk9jfaG9927_p-hkw';
+mapboxgl.accessToken = 'pk.eyJ1IjoicmljaGFyZC1jb25zdGFudGluZSIsImEiOiJjbWZtamJqeWswMmk1MmpvbnQzMmRjMHA0In0.fPxg8O3dFJ0VFutZudtWRQ';
 
 // Initialize the application
 document.addEventListener('DOMContentLoaded', async function() {

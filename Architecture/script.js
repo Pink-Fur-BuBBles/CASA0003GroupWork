@@ -1,8 +1,8 @@
-mapboxgl.accessToken = 'pk.eyJ1IjoibGljaGFyZCIsImEiOiJjbTg4Y2h1Z2wwcXA2MmlzYnN6Y3MxbDB4In0.4Zl2BKk9jfaG9927_p-hkw';
+mapboxgl.accessToken = 'pk.eyJ1IjoicmljaGFyZC1jb25zdGFudGluZSIsImEiOiJjbWZtamJqeWswMmk1MmpvbnQzMmRjMHA0In0.fPxg8O3dFJ0VFutZudtWRQ';
 
 const map = new mapboxgl.Map({
   container: 'map',
-  style: 'mapbox://styles/lichard/cmaz1n2jb00ak01r25551319v',
+  style: 'mapbox://styles/richard-constantine/cmfo7h1w400bo01rfc46j8ixh',
   center: [2.3499, 48.852968], // 巴黎圣母院
   zoom: 17,
   pitch: 60,

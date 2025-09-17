@@ -1,7 +1,7 @@
 // ------------------------------
 // Mapbox & 初始视角
 // ------------------------------
-mapboxgl.accessToken = 'pk.eyJ1IjoibGljaGFyZCIsImEiOiJjbTg4Y2h1Z2wwcXA2MmlzYnN6Y3MxbDB4In0.4Zl2BKk9jfaG9927_p-hkw';
+mapboxgl.accessToken = 'pk.eyJ1IjoicmljaGFyZC1jb25zdGFudGluZSIsImEiOiJjbWZtamJqeWswMmk1MmpvbnQzMmRjMHA0In0.fPxg8O3dFJ0VFutZudtWRQ';
 
 const initialView = {
   center: [2.333, 48.8566],
@@ -12,7 +12,7 @@ const initialView = {
 
 const map = new mapboxgl.Map({
   container: 'map',
-  style: 'mapbox://styles/lichard/cmb4bowso00kc01pa6cgt2qgf',
+  style: 'mapbox://styles/richard-constantine/cmfo8fgf300b701rg6b67gtf7',
   ...initialView
 });
 
